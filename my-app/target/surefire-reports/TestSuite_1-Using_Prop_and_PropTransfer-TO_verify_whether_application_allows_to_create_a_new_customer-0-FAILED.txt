@@ -1,0 +1,29 @@
+Status: FAILED
+Time Taken: 61451
+Size: 0
+Timestamp: Thu Dec 10 08:00:06 IST 2020
+TestStep: TO verify whether application allows to create a new customer
+
+----------------- Messages ------------------------------
+java.net.SocketTimeoutException: Read timed out
+
+----------------- Properties ------------------------------
+Endpoint: http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:def="http://soap.upskills.in/soap/default?services=customerCustomerRepositoryV1">
+   <soap:Header/>
+   <soap:Body>
+      <def:customerCustomerRepositoryV1SaveRequest>
+         <customer>
+            <email>palaq191266@gmail.com</email>
+            <firstname>pal</firstname>
+            <lastname>vi</lastname>
+         </customer>
+      </def:customerCustomerRepositoryV1SaveRequest>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+- missing response / garbage collected -
